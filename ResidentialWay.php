@@ -24,7 +24,7 @@ class ResidentialWay extends HighWay
                 return NULL;
             }
     
-            return $currentVehicles[$vehicle];
+            return $this->setCurrentVehicles[$vehicle];
         }
 
 }
