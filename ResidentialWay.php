@@ -2,7 +2,7 @@
 
 require_once 'HighWay.php';
 
-class ResidentialWay extends HighWay
+final class ResidentialWay extends HighWay
 {
 
         // Properties
