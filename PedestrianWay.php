@@ -1,7 +1,7 @@
 <?php
 require_once 'HighWay.php';
 
-class PedestrianWay extends HighWay
+final class PedestrianWay extends HighWay
 {
         // Properties
         
