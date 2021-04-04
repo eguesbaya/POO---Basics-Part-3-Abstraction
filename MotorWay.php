@@ -1,7 +1,7 @@
 <?php
 require_once 'HighWay.php';
 
-class MotorWay extends HighWay
+final class MotorWay extends HighWay
 {
 
     // Properties
