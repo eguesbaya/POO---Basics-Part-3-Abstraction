@@ -18,13 +18,11 @@ final class ResidentialWay extends HighWay
     }
 
         //Method
-        public function addVehicle($vehicle)
+        public function addVehicle(Vehicle $vehicle): void
         {
-            if(!($vehicle instanceof Car)){
-                return NULL;
-            }
-    
-            return $this->setCurrentVehicles[$vehicle];
+            $this->setCurrentVehicle($vehicle);
         }
+    
+            
 
 }

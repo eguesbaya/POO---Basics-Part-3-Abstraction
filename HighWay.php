@@ -3,7 +3,7 @@
 abstract class HighWay
 {
     //Properties
-    private array $currentVehicle;
+    private array $currentVehicle = [];
     private int $nbLane;
     private int $maxSpeed;
 
@@ -15,14 +15,14 @@ abstract class HighWay
     }
 
     //Methods
-    public function getCurrentVehicle()
+    public function getCurrentVehicle(): array
     {
         return $this->currentVehicle ;
     }
 
-    public function setCurrentVehicle(): void
+    public function setCurrentVehicle(Vehicle $vehicle): void
     {
-        $this->currentVehicle = $currentVehicle;
+        $this->currentVehicle[] = $vehicle;
 
     }
 
@@ -31,7 +31,7 @@ abstract class HighWay
         return $this->nbLane ;
     }
 
-    public function setNbLane(): void
+    public function setNbLane($nbLane): void
     {
         $this->nbLane = $nbLane;
 
@@ -42,7 +42,7 @@ abstract class HighWay
         return $this->maxSpeed ;
     }
 
-    public function setMaxSpeed(): void
+    public function setMaxSpeed($maxSpeed): void
     {
         $this->maxSpeed = $maxSpeed;
 

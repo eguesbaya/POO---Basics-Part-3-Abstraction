@@ -18,13 +18,11 @@ final class MotorWay extends HighWay
     }
 
     //Method
-    public function addVehicle($vehicle)
+    public function addVehicle(Vehicle $vehicle): void
     {
-        if(!($vehicle instanceof Car)){
-            return NULL;
+        if($vehicle instanceof Car || $vehicle instanceof Truck){
+            $this->setCurrentVehicle($vehicle);
         }
-
-        return $this->setCurrentVehicles[$vehicle];
     }
 
 
